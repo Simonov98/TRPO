@@ -21,6 +21,7 @@ class EquThird extends Equ implements EquationInterface
         if ($a == 0) {
             return $this->equ($b, $c);
         }
+        \Simonov\MyLog::log("Это квадратное уравнение");
         if ($x > 0) {
             return $this->x = array(
                 ((-$b + sqrt($x)) / (2 * $a)),
@@ -28,7 +29,7 @@ class EquThird extends Equ implements EquationInterface
             );
         }
         if ($x < 0) {
-            return null;
+            throw new SimonovException("\nУравнение не имеет корней!");
         }
         return $this->x = (-$b) / 2 * $a;
     }
