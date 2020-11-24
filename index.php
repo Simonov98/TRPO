@@ -10,6 +10,8 @@ ini_set("display_errors", 1);
 error_reporting(-1);
 
 try {
+    $version = file_get_context("version.txt");
+    MyLog::log("Версия программы ".$version);
     $et = new \Simonov\EquThird();
     $data = array();
     for ($i = 1; $i < 4; $i++) {
