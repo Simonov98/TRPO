@@ -1,11 +1,5 @@
 <?php
-include "core/EquationInterface.php";
-include "core/LogInterface.php";
-include "core/LogAbstract.php";
-include "Simonov/Equ.php";
-include "Simonov/EquThird.php";
-include "Simonov/MyLog.php";
-include "Simonov/SimonovException.php";
+require_once(__DIR__."/vendor/autoload/php");
 ini_set("display_errors", 1);
 error_reporting(-1);
 

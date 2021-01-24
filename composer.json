@@ -1,0 +1,25 @@
+{
+  "name": "simonov98/trpo",
+  "type": "project",
+  "authors": [
+    {
+      "name": "Simonov98",
+      "email": "pydelok178@gmail.com"
+    }
+  ],
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/rok9ru/trpo-core.git"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/Simonov98/TRPO2.git"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {
+    "rok9ru/trpo-core": "^2.0",
+    "simonov98/trpo2": "^5.1"
+  }
+}
